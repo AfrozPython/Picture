@@ -4,9 +4,8 @@ Spyder Editor
 
 This is a temporary script file.
 """
-# import module
+# Video Upload
 import streamlit as st
-# Display Images
-from PIL import Image
-img = Image.open("Karina.png")
-st.image(img, width=400)
+video_file = open('Video.mp4', 'rb')
+video_bytes = video_file.read()
+st.video(video_bytes)
